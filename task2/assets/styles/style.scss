@@ -1,0 +1,42 @@
+.main {
+	display: flex;
+	column-gap: 50px;
+}
+
+.comment-input {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 40%;
+	row-gap: 20px;
+}
+
+.comment-display {
+	flex-grow: 1;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding: 10px;
+}
+
+.error {
+	display: none;
+	color: red;
+	font-size: large;
+	font-weight: bold;
+}
+
+img {
+	width: 80px;
+}
+
+#btn {
+	height: 30px;
+	cursor: pointer;
+}
+
+.none {
+	display: none;
+}

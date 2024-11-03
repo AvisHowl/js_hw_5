@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<title>Чат</title>
+	</head>
+	<body>
+		<h1 class="title">Сервис комментариев со спам-фильтром</h1>
+		<main class="main">
+			<div class="comment-input">
+				<h2 class="heading">Оставьте ваш комментарий</h2>
+				<span class="error">Пожалуйста, заполните все поля!</span>
+				<div class="checkbox-container">
+					<label for="nameDisplay">Показывать ваше имя?</label>
+					<input
+						type="checkbox"
+						name="nameDisplay"
+						id="nameDisplayOn"
+					/>
+					<span class="checkbox-title">Да</span>
+					<input
+						type="checkbox"
+						name="nameDisplay"
+						id="nameDisplayOff"
+					/>
+					<span class="checkbox-title">Нет</span>
+				</div>
+				<label for="name" id="nameInputTitle">Введите ваше имя:</label>
+				<input type="text" name="name" id="nameInput" />
+				<label for="avatar">Введите ссылку вашего аватара:</label>
+				<input type="url" name="avatar" id="avatarInput" />
+				<label for="comment">Оставьте комментарий:</label>
+				<textarea
+					name="comment"
+					id="commentInput"
+					cols="30"
+					rows="10"
+				></textarea>
+				<button id="btn">Отправить</button>
+			</div>
+			<div class="comment-display">
+				<h2 class="heading">Чат</h2>
+				<div class="text-container"></div>
+			</div>
+		</main>
+		<script src="./assets/scripts/script.js"></script>
+	</body>
+</html>
